@@ -16,8 +16,6 @@ public class Main {
 		
 		subRipSubtitleList.print("subRipTitle.srt");
 
-		
-		System.out.println("Sambili smo program!");
 	}
 	
 
