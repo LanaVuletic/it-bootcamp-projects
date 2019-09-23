@@ -38,15 +38,15 @@ public class MPlayerSubtitleList {
 
 			int titleNumber = 1;
 
-			String linija = readerFajla.readLine(); // citamo linije fajla
-			while (linija != null) { // i dok god ima redova
+			String linija = readerFajla.readLine(); 
+			while (linija != null) { 
 				if (!linija.equals("")) {
 					MPlayerSubtitle sub = linijaUSubtitle(linija, titleNumber, readerFajla);
 					this.list.add(sub);
 					titleNumber++;
 				}
 
-				linija = readerFajla.readLine(); // nastavljamo sa citanjem
+				linija = readerFajla.readLine(); 
 			}
 
 			readerFajla.close();
@@ -88,9 +88,9 @@ public class MPlayerSubtitleList {
 	public void print(String fileName) {
 		File file = new File(fileName);
 		try {
-			file.createNewFile(); // ovde kreiramo novi fajl
+			file.createNewFile(); 
 
-			FileWriter writer = new FileWriter(file); // ovde kreiramo novi FileWriter objekat
+			FileWriter writer = new FileWriter(file); 
 
 			// upisujemo sadrzaj u fajl
 
